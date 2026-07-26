@@ -1,0 +1,90 @@
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  padding: 26px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  padding: 0 6px;
+}
+.logoOrange {
+  color: var(--color-primary);
+}
+.logoNavy {
+  color: var(--color-navy);
+}
+.nav {
+  flex: 1;
+}
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 15px;
+  width: 100%;
+  text-align: right;
+  transition: all 0.2s ease;
+}
+.link:hover {
+  background: var(--color-surface-soft);
+  color: var(--color-primary);
+}
+.active {
+  background: var(--color-surface-soft);
+  color: var(--color-primary);
+}
+.icon {
+  font-size: 19px;
+  display: flex;
+}
+.bottomNav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 14px;
+}
+.backdrop {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    z-index: 200;
+    transition: right 0.25s ease;
+    box-shadow: var(--shadow-lg);
+  }
+  .sidebar.open {
+    right: 0;
+  }
+  .backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 190;
+  }
+}

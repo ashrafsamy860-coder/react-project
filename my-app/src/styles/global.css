@@ -1,0 +1,68 @@
+@import "./variables.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  direction: rtl;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-family);
+  outline: none;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.container {
+  width: 100%;
+  padding: var(--space-5);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: var(--space-3);
+  }
+}

@@ -1,0 +1,67 @@
+:root {
+  /* Brand colors */
+  --color-primary: #f4801f;
+  --color-primary-dark: #e06d0f;
+  --color-primary-light: #ffb877;
+  --color-navy: #1c2b4b;
+
+  /* Status colors */
+  --color-success: #2fa84f;
+  --color-success-bg: #e7f7ec;
+  --color-warning: #f5a623;
+  --color-warning-bg: #fff3de;
+  --color-danger: #e02b2b;
+  --color-danger-bg: #fdeaea;
+
+  /* Neutrals */
+  --color-bg: #fdece0;
+  --color-surface: #ffffff;
+  --color-surface-soft: #fdf0e6;
+  --color-border: #f3d9c4;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #6b6b6b;
+  --color-text-muted: #9b9b9b;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 6px 20px rgba(244, 128, 31, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Font */
+  --font-family: "Cairo", "Segoe UI", Tahoma, sans-serif;
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --topbar-height: 84px;
+}
+
+/* Dark theme overrides — toggled from Settings > تفضيلات المنصة.
+   Only surface/text tokens change; brand colors stay identical so the
+   EGC orange identity is preserved in both modes. */
+[data-theme="dark"] {
+  --color-bg: #12141a;
+  --color-surface: #1b1e27;
+  --color-surface-soft: #232733;
+  --color-border: #2d3240;
+  --color-text: #f2f2f2;
+  --color-text-secondary: #b6b9c2;
+  --color-text-muted: #828692;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.4);
+}

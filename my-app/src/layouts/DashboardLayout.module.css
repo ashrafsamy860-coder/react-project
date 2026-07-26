@@ -1,0 +1,33 @@
+.wrap {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+.main {
+  margin-right: var(--sidebar-width);
+  padding: 20px;
+  min-width: 0;
+}
+.content {
+  animation: fadeIn 0.25s ease;
+  padding-top: var(--topbar-height);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    margin-right: 0;
+    padding: 14px;
+  }
+  .content {
+    padding-top: 78px;
+  }
+}

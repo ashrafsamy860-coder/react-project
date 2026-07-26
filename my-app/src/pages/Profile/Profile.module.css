@@ -1,0 +1,102 @@
+.titleBlock {
+  margin-bottom: 20px;
+}
+.titleBlock h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.titleBlock p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  margin-top: 4px;
+}
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 18px;
+}
+.avatarRow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+.avatarWrap {
+  position: relative;
+  width: 84px;
+  height: 84px;
+}
+.avatarWrap img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.cameraBtn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+}
+.avatarRow h3 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.specialty {
+  font-size: 13px;
+  color: var(--color-primary);
+  margin-top: 4px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.field label {
+  font-weight: 700;
+  font-size: 14px;
+}
+.field input,
+.field textarea {
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  font-size: 14px;
+  color: var(--color-text);
+  border: 1px solid transparent;
+}
+.field textarea {
+  resize: vertical;
+  margin-bottom: 20px;
+}
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--color-primary);
+}
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}

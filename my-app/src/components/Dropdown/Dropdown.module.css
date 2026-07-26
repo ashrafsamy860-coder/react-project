@@ -1,0 +1,20 @@
+.wrap {
+  position: relative;
+  display: inline-flex;
+}
+.panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  z-index: 150;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 220px;
+  overflow: hidden;
+}
+.alignStart {
+  right: 0;
+}
+.alignEnd {
+  left: 0;
+}

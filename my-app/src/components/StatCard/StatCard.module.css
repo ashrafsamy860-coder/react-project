@@ -1,0 +1,58 @@
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  box-shadow: var(--shadow-sm);
+  flex: 1 1 190px;
+  min-width: 190px;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+.iconWrap {
+  align-self: flex-start;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-soft);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.accent_primary .iconWrap {
+  background: rgba(244, 128, 31, 0.12);
+  color: var(--color-primary);
+}
+.accent_success .iconWrap {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+.accent_warning .iconWrap {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+.accent_danger .iconWrap {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+.value {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-text);
+}
+.label {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  text-align: right;
+  line-height: 1.5;
+  word-break: break-word;
+}

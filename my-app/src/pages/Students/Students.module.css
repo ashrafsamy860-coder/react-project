@@ -1,0 +1,229 @@
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+  direction: rtl;
+}
+.titleBlock {
+  margin-bottom: 0;
+}
+.titleBlock h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.titleBlock p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  margin-top: 4px;
+}
+.statsRow {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+.filterBar {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.selectWrap {
+  position: relative;
+  min-width: 170px;
+}
+.selectWrap select {
+  width: 100%;
+  appearance: none;
+  padding: 12px 36px 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 14px;
+}
+.chevron {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-secondary);
+  pointer-events: none;
+}
+.searchWrap {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+}
+.searchWrap input {
+  width: 100%;
+  padding: 12px 42px 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 14px;
+}
+.searchIcon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-secondary);
+}
+.tableWrap {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+.table thead tr {
+  background: var(--color-surface-soft);
+}
+.table th {
+  padding: 16px 18px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.table td {
+  padding: 14px 18px;
+  border-top: 1px solid var(--color-border);
+  font-size: 14px;
+}
+.studentCell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.studentCell img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.studentName {
+  font-weight: 700;
+}
+.studentEmail {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+.courseCell {
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.progressWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+}
+.progressBar {
+  flex: 1;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-surface-soft);
+  overflow: hidden;
+}
+.progressFill {
+  height: 100%;
+  background: var(--color-primary);
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.iconBtn {
+  color: var(--color-text-secondary);
+  font-size: 17px;
+  display: flex;
+  transition: color 0.2s ease;
+}
+.iconBtn:hover {
+  color: var(--color-primary);
+}
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: var(--color-text-muted);
+}
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  text-align: center;
+}
+.modalAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+.modalEmail {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.modalRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px dashed var(--color-border);
+  font-size: 14px;
+}
+
+.studentTextCol {
+  min-width: 0;
+}
+.studentName,
+.studentEmail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+.menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+}
+.menu button:hover {
+  background: var(--color-surface-soft);
+}
+.menuDanger {
+  color: var(--color-danger);
+}
+.messageArea {
+  width: 100%;
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  font-size: 14px;
+  resize: vertical;
+}

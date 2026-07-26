@@ -1,0 +1,198 @@
+.titleBlock {
+  margin-bottom: 20px;
+}
+.titleBlock h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.titleBlock p {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  margin-top: 4px;
+}
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 18px;
+}
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+.subTitle {
+  font-size: 14px;
+  font-weight: 800;
+  margin: 22px 0 12px;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.field label {
+  font-weight: 700;
+  font-size: 14px;
+}
+.field select {
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 13px 16px;
+  font-size: 14px;
+  color: var(--color-text);
+  border: 1px solid transparent;
+}
+.field select:focus {
+  border-color: var(--color-primary);
+}
+.themeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.themeText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--color-text-secondary);
+}
+.themeText svg {
+  font-size: 20px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+.themeText .label {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+.themeText .description {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  width: 100%;
+  margin-right: 30px;
+}
+.notifList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+.notifRow {
+  padding: 14px 4px;
+  border-top: 1px dashed var(--color-border);
+}
+.notifRow:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+.sessionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sessionRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-soft);
+}
+.sessionIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.sessionInfo {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+.sessionDevice {
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.currentTag {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-success);
+  background: var(--color-success-bg);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+.sessionMeta {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+.sessionLogout {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-danger);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sessionLogout:hover {
+  background: var(--color-danger-bg);
+}
+.dangerCard {
+  border: 1px solid var(--color-danger-bg);
+}
+.dangerText {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 18px;
+  max-width: 640px;
+}
+
+@media (max-width: 900px) {
+  .grid3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+  .themeRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
